@@ -1,32 +1,13 @@
-<!DOCTYPE html>
-<html>
-  <head>
-    <title>Machine Learning</title>
-  <meta charset="utf-8">
-   <script src="wht.js" ></script>
-   <script src="am.js" ></script>
-   <script src="p5.min.js" ></script>
-   <script src="app.js" ></script>
-
+<!DOCTYPE html><html lang="en"><head>
+    <script src="p5.js"></script>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <meta charset="utf-8">
   </head>
   <body>
-    <h1>Associative Memory</h1>
-    
-    <p>Uses perdeterminded patterns of sign flipping followed by the fast Walsh Hadamard transform to create Random Projections (RPs.)</p>
-    <p>The RPs are then binarized to give a Locality Sensitive Hash.</p>
-    <p>The bits of the hash are regarded as +1 or -1, weighted and summed to give a recalled value.</p>
-    <p>This is done in as many dimensions as wanted.  To train, a recall is done and the error calculated.</p>
-    <p>The error is divided by the number of bits used and that is added or subtracted from each weight as appropriate to make the error zero.</p>
-    <p>The effect on previously stored memories to to contaminate them with some Gaussian noise.</p>
-    <p>By repeated training on the examples the Gaussian noise can be driven to zero if the capacity of the AM is big enough.<p>
-    <a href='www.md2020.eu5.org/wht1.html' rel="noopener noreferrer" target="_blank">WHT 1</a>
-    <a href='www.md2020.eu5.org/wht2.html' rel="noopener noreferrer" target="_blank">WHT 2</a>
-    <a href='www.md2020.eu5.org/wht3.html' rel="noopener noreferrer" target="_blank">WHT 3</a>
-    <a href='www.md2020.eu5.org/wht4.html' rel="noopener noreferrer" target="_blank">WHT 4</a>
-    <a href='www.md2020.eu5.org/compress/compress.html' rel="noopener noreferrer" target="_blank">WHT 5</a>
-    <a href='https://github.com/FALCONN-LIB/FFHT/issues/26'rel="noopener noreferrer" target="_blank">Synopsis</a>
-    <h2>Auto-Associative Example.</h2> 
-    <h3>Mouse click to select examples, press 1 to train, 0 to clear.</h3>
-    
-  </body>  
-</html>
+    <h2>Associative Memory</h2>
+    <h3>Click the mouse to select training squares.</h3>
+    <h3>Press 1 to start and stop training. 0 to clear.</h3>
+    <script src="sketch.js"></script>
+  
+
+</body></html>
