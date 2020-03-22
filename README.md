@@ -12,10 +12,11 @@ Code:
 https://editor.p5js.org/siobhan.491/sketches/k7UePTA4H
 
 If you did normal full hashing you can think about how the weighted sum would act as an associative memory in that situation.
-Remembering that random vectors in higher dimensional space are approximatly orthongonal.  Then downgrade to the mild hashing case.
+Remembering that random vectors in higher dimensional space are aapproximately orthongonal.  Then downgrade to the mild hashing case.
 You can think about the geometry as well, in particular how the vector length will increase as you add more associations, and how that interacts with the variance equation for linear combinations of random variables.
 In practice it just tells you that undercapacity you get recall with error correction (reduction of variance), at capacity recall with no error correction, over capacity recall with Gaussian noise.
 Two use cases might be:
 A/ One shot learning with a pretrained neural network acting as a feature extractor.
+
 B/ As memory for a Neural Turing Machine.  That is a neural network with an external (associative) memory bank.
 
